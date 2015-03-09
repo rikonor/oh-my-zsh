@@ -32,11 +32,6 @@ sed -i -e "/export PATH=/ c\\
 export PATH=\"$PATH\"
 " ~/.zshrc
 
-if [ "$SHELL" != "$(which zsh)" ]; then
-    echo "\033[0;34mTime to change your default shell to zsh!\033[0m"
-    chsh -s `which zsh`
-fi
-
 echo "\033[0;32m"'         __                                     __   '"\033[0m"
 echo "\033[0;32m"'  ____  / /_     ____ ___  __  __   ____  _____/ /_  '"\033[0m"
 echo "\033[0;32m"' / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \ '"\033[0m"
